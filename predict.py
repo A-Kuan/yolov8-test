@@ -1,8 +1,9 @@
 
 from ultralytics import YOLO
 
-# Load a pretrained YOLOv8n model
+# 加载模型
 model = YOLO('./best.pt')
 
+# 要推理的图片
 results = model.predict('./images/dog.jpg', save=True, imgsz=320, conf=0.5)
 

@@ -14,6 +14,7 @@ if __name__ == '__main__':
     model = YOLO('yolov8n.pt')
 
     # # Train the model using the 'coco128.yaml' dataset for 3 epochs
+    # 数据集配置文件
     results = model.train(data=str(ROOT) + '/datasets/animal/data.yaml', epochs=100, imgsz=640)
 
 
